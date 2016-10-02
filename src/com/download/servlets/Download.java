@@ -34,13 +34,13 @@ public class Download extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		// reads input file from an absolute path
-        String filePath = "download.txt";
+        String filePath = "/download.txt";
         File downloadFile = new File(filePath);
         FileInputStream inStream = new FileInputStream(downloadFile);
          
         // if you want to use a relative path to context root:
-        String relativePath = getServletContext().getRealPath("");
-        System.out.println("relativePath = " + relativePath);
+        //String relativePath = getServletContext().getRealPath("");
+        //System.out.println("relativePath = " + relativePath);
          
         // obtains ServletContext
         ServletContext context = getServletContext();
