@@ -51,7 +51,7 @@ public class Download extends HttpServlet {
             // set to binary type if MIME mapping not found
             mimeType = "application/octet-stream";
         }
-        System.out.println("MIME type: " + mimeType);
+        //System.out.println("MIME type: " + mimeType);
          
         // modifies response
         response.setContentType(mimeType);
